@@ -6,6 +6,8 @@ import { Animated, Image, StyleSheet, Text, TouchableOpacity, View } from 'react
 import { heightRatio, widthRatio } from 'utils/responsive/pixelRatio';
 import { analyticsLog } from '../../utils/analytics';
 
+
+
 const SplashScreen: React.FC = () => {
   const logoScale = new Animated.Value(0.5);
   const logoPosition = new Animated.Value(0);
