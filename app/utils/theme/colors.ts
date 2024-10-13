@@ -1,0 +1,50 @@
+export const colors = {
+  primary: '#3572EF',
+  secondary: '#E1EBEE',
+  transparent: 'transparent',
+
+  white: '#FFFFFF',
+  green1: '#D6EFD8',
+  green2: '#80AF81',
+  green3: '#508D4E',
+  green4: '#1A5319',
+  green5: '#F0FFF0',
+  green6: '#F5FFFA',
+
+  gray1: '#EAEAEA',
+  gray2: '#F5F5F5',
+  gray3: '#DCDCDC',
+  gray4: '#D3D3D3',
+  gray5: '#C0C0C0',
+  gray6: '#A9A9A9',
+  gray7: '#808080',
+  gray8: '#696969',
+
+  black: '#000000',
+
+  orange1: '#FFEFD5',
+  orange2: '#FFE5B4',
+  orange3: '#D99058',
+  orange4: '#FFA000',
+  orange5: '#FFA500',
+
+  blue1: '#B6D0E2',
+  blue2: '#A7C7E7',
+  blue3: '#87CEEB',
+  blue4: '#4169E1',
+  blue5: '#00308F',
+  blue6: '#3F00FF',
+  blue7: '#007FFF',
+  blue8: '#3457D5',
+  blue9: '#034694',
+  blue10: '#E1EBEE',
+
+  red1: '#FF0000',
+  red2: '#FF6666',
+  red3: '#990000',
+  red4: '#FF4500',
+  red5: '#FF3333',
+  red6: '#FF0000',
+  first: '#FF0050',
+  second: '#00F2EA'
+};
