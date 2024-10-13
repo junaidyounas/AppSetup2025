@@ -1,9 +1,10 @@
-import React, { useEffect } from 'react';
-import { View, Text, StyleSheet, Animated, TouchableOpacity, Image } from 'react-native';
-import { heightRatio, widthRatio } from 'utils/responsive/pixelRatio';
-import { screens } from 'navigations/screens';
 import { images } from 'assets';
 import { navigate } from 'navigations/navRef';
+import { screens } from 'navigations/screens';
+import React, { useEffect } from 'react';
+import { Animated, Image, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
+import { heightRatio, widthRatio } from 'utils/responsive/pixelRatio';
+import { analyticsLog } from '../../utils/analytics';
 
 const SplashScreen: React.FC = () => {
   const logoScale = new Animated.Value(0.5);
@@ -15,6 +16,9 @@ const SplashScreen: React.FC = () => {
   const buttonOpacity = new Animated.Value(0);
 
   useEffect(() => {
+    analyticsLog('introductino_screen', 'just seen').then(res => {
+      console.log("🚀 ~ analyticsLog ~ res:", res)
+    })
     Animated.sequence([
       Animated.timing(logoScale, {
         toValue: 1,

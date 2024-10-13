@@ -1,4 +1,7 @@
+use_frameworks! :linkage => :static
 # Resolve react_native_pods.rb with node to allow for hoisting
+
+
 require Pod::Executable.execute_command('node', ['-p',
   'require.resolve(
     "react-native/scripts/react_native_pods.rb",
@@ -7,6 +10,7 @@ require Pod::Executable.execute_command('node', ['-p',
 
 platform :ios, min_ios_version_supported
 prepare_react_native_project!
+use_modular_headers!
 
 linkage = ENV['USE_FRAMEWORKS']
 if linkage != nil
@@ -16,6 +20,7 @@ end
 
 target 'NewAppName' do
   config = use_native_modules!
+  pod 'Firebase/Analytics'
 
   use_react_native!(
     :path => config[:reactNativePath],
